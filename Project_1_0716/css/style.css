@@ -43,6 +43,19 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Light.eot');
+	src: local('Raleway Light'), local('Raleway-Light'),
+		url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Light.woff2') format('woff2'),
+		url('../fonts/Raleway-Light.woff') format('woff'),
+		url('../fonts/Raleway-Light.ttf') format('truetype'),
+		url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
 .container {
     width: 1050px;
     margin: 0 auto;
@@ -66,15 +79,16 @@ header {
     font-weight: bold;
 }
 
-.logo span {
+span {
     color: #28CFB5;
+    font-weight: bold;
 }
 
 .logo {
     float: left;
-    margin: 14px 0 0 14px;
+    margin: 15px 0 0 15px;
     letter-spacing: 0.1em;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 nav {
@@ -84,8 +98,8 @@ nav {
 
 header nav ul li {
     display: inline-block;
-    margin: 12px 0px;
-    font-size: 14px;
+    margin: 13px 0px;
+    font-size: 12px;
 }
 
 header a:link, header a:visited {
@@ -110,7 +124,96 @@ ul li:nth-child(2) {
 #galeria-1 {
     width: 100%;
     height: 505px;
-    background-color: #F1F1F1;
+    /*background-color: #F1F1F1;*/
+    background: rgba(253,253,253,1);
+    background: -moz-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(227,227,227,1) 67%, rgba(209,206,214,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(253,253,253,1)), color-stop(67%, rgba(227,227,227,1)), color-stop(100%, rgba(209,206,214,1)));
+    background: -webkit-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(227,227,227,1) 67%, rgba(209,206,214,1) 100%);
+    background: -o-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(227,227,227,1) 67%, rgba(209,206,214,1) 100%);
+    background: -ms-linear-gradient(top, rgba(253,253,253,1) 0%, rgba(227,227,227,1) 67%, rgba(209,206,214,1) 100%);
+    background: linear-gradient(to bottom, rgba(253,253,253,1) 0%, rgba(227,227,227,1) 67%, rgba(209,206,214,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#d1ced6', GradientType=0 );
+}
+
+#galeria-1 p:first-child {
+    float: left;
+    font-family: 'Raleway', sans-serif;
+    color: #28CFB5;
+    font-size: 72px;
+    margin: 180px 0 220px 0;
+    border: 1px solid green;
+}
+
+#galeria-1 p:nth-child(4) {
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    color: #28CFB5;
+    font-size: 72px;
+    margin: 180px 0 220px 0;
+    border: 1px solid green;
+}
+
+/*#galeria-1 img {
+    float: left;
+    display: block;
+    width: 587px;
+    height: 420px;
+    border: 1px solid green;
+    margin: 40px 0 40px -75px;
+}*/
+
+div.foto {
+    float: left;
+    background-image: url("../images/black_chair.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background: url("../images/black_chair.png") center / cover no-repeat white;*/
+    width: 400px;
+    /*width: 35%;*/
+    height: 400px;
+    margin-top: 80px;
+}
+
+#galeria-1 div:nth-child(3) {
+    float: left;
+    width: 500px;
+    /*height: 505px;*/
+    height: 380px;
+    margin-top: 170px;
+
+}
+
+#galeria-1 h1 {
+    font-family: 'Raleway', sans-serif;
+    /*font-weight: 300;*/
+    text-transform: uppercase;
+    word-spacing: 0.1em;
+    font-size: 42px;
+    text-align: center;
+}
+
+p.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 1.75em;
+    text-align: center;
+    /*font-weight: bold;*/
+}
+
+#galeria-1 .button {
+    background-color: #28CFB5;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    padding: 1px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    margin: 0 130px 0 130px;
 }
 
 /*SECTION: GALLERY-2*/
